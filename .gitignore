@@ -6,3 +6,4 @@ __pycache__/
 *.py[cod]
 *.so
 bot.sqlite3
+media
