@@ -79,6 +79,6 @@ async def echo(message: types.Message):
     await bot.send_message(message.from_user.id, message.text)
 
 
-if __name__ == '__main__':
-    logging.basicConfig(level=logging.INFO)
-    executor.start_polling(dp, skip_updates=True)
+def register_handlers_callback(dp: Dispatcher):
+    dp.register_callback_query_handler(quiz_1, text="button_call_1")
+    dp.register_callback_query_handler(quiz_2, text="button_call_2")
