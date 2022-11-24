@@ -23,3 +23,24 @@ submit_markup = ReplyKeyboardMarkup(
     KeyboardButton("ДА"),
     KeyboardButton("НЕТ")
 )
+
+cancel_markup = ReplyKeyboardMarkup(
+    resize_keyboard=True,
+    one_time_keyboard=True,
+).add(
+    KeyboardButton("CANCEL"),
+)
+
+
+duraction_markup = ReplyKeyboardMarkup(
+    resize_keyboard=True,
+    one_time_keyboard=True,
+    row_width=3
+).add(
+    KeyboardButton("Android"),
+    KeyboardButton("Back-End"),
+    KeyboardButton("Front-End"),
+    KeyboardButton("UX/UI"),
+    KeyboardButton("IOS"),
+    KeyboardButton("Project-Menger"),
+)
